@@ -22,7 +22,7 @@ for move in puzzle_input.text:
         print("we are now on floor", floor )
     position += 1
         
-print(floor)
+print("We are on floor: ", floor)
 print("position we entered basement: ", position)
 
 
