@@ -9,9 +9,6 @@ def grab_input():
     inputlist = puzzle_input.text.split("\n")[:-1]
     return inputlist
 
-inputlist = grab_input()
-print(inputlist)
-
 def move_head_straight(part, direction):
     if direction == "R":
         part[0] += 1
