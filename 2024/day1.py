@@ -3,7 +3,7 @@
 import requests
 
 def grab_input():
-    sessionid = '53616c7465645f5f16478a7c79a602bcfd37c7ccd166fecaeb784d9b005613eb0d0606c7542371ed6d85c2c15050fc95f10ea99e0c428c400ee93e3b7a887e94'
+    sessionid = input("sessionid from cookie: ")
     cookie = {'session': sessionid}
     response = requests.get("https://adventofcode.com/2024/day/1/input", cookies=cookie)
     return response.text.strip().split("\n")
