@@ -2,7 +2,7 @@
 
 import hashlib
 
-inputkey = "bgvyzdsv"
+inputkey = "ckczppom"
 
 for number in range(100000000000000):
     hash = hashlib.md5((inputkey+str(number)).encode()).hexdigest()
