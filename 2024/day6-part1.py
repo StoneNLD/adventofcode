@@ -5,7 +5,7 @@ import requests
 def grab_input():
     sessionid = input("sessionid from cookie: ")
     cookie = {'session': sessionid}
-    response = requests.get("https://adventofcode.com/2024/day/5/input", cookies=cookie)
+    response = requests.get("https://adventofcode.com/2024/day/6/input", cookies=cookie)
     return response.text.strip().split("\n")
 
 test_input_part1 = []
