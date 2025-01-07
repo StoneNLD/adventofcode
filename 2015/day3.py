@@ -18,6 +18,7 @@ inputstring = puzzle_input.text
 inputlist = list(inputstring)
 
 
+# santa_input = inputlist[::1]
 santa_input = inputlist[::2]
 robosanta_input = inputlist[1::2]
 

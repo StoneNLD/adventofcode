@@ -7,9 +7,11 @@ cookie = {'session': sessionid}
 puzzle_input = requests.get("https://adventofcode.com/2015/day/1/input", cookies=cookie)
 
 floor = 0
-position= 0
+position = 0
 
 for move in puzzle_input.text:
+    print(move)
+    # exclude break for part1
     if floor < 0:
         break
     if move == "(":
